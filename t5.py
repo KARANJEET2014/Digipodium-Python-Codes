@@ -9,10 +9,10 @@ while True:
         lt(360/6)
 
     left(360/6)
-    i= i+5
+    i= i+1
     write(i)
 
     if i>500:
         break
 
-    mainloop()
+mainloop()
