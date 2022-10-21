@@ -17,6 +17,10 @@ print(last_letters)
 
 names = ['Project Manger', 'Central Processing Unit', 'Graphics Processing Unit', 'Random Access Memory', 'Input Output']
 acronym =[]
+x= len(names)
+
+for i in range (x):
+    
 
 
 print(acronym)
