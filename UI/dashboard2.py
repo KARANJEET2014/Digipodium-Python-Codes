@@ -89,7 +89,7 @@ st.header('Important Visualizations')
 
 #Survival rate with respect to Passenger class
 
-fig = px.bar(titanic, y = 'Pcalss', x= 'Survived', facet_col = 'Sex', color = 'Survived', title = 'Survival Rate with respect to Passenger class', color_discrete_sequence = px.colors.qualitative.Dark24)
+fig = px.bar(titanic, y = 'Pclass', x= 'Survived', facet_col = 'Sex', color = 'Survived', title = 'Survival Rate with respect to Passenger class', color_discrete_sequence = px.colors.qualitative.Dark24)
 
 st.plotly_chart(fig)
 
