@@ -13,7 +13,7 @@ def load_titanic_data():
 def clean_data(df):
     df.drop(columns = ['Cabin'], inplace = True)
     df['Age'].fillna(df['Age'].mean(), inplace = True)
-    df['Survived'] = df['Survived'].apply(lamda x: 'Yes' if x==1 else 'No') # to plot zero values properly in the graph
+    df['Survived'] = df['Survived'].apply(lambda x: 'Yes' if x==1 else 'No') # to plot zero values properly in the graph
     return df
 
 #display
@@ -89,7 +89,7 @@ st.header('Important Visualizations')
 
 #Survival rate with respect to Passenger class
 
-fig = px.bar(titanic, y = 'Pcalss', x= 'Survived', facet_col = 'Sex', color = 'Survived', title = 'Survival Rate with respect to Passenger class', color_discrete_sequence = px.colors.qualitative.dark24)
+fig = px.bar(titanic, y = 'Pcalss', x= 'Survived', facet_col = 'Sex', color = 'Survived', title = 'Survival Rate with respect to Passenger class', color_discrete_sequence = px.colors.qualitative.Dark24)
 
 st.plotly_chart(fig)
 
