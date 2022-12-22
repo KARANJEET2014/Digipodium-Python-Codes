@@ -29,5 +29,4 @@ selected_col = st.selectbox('Select a Column', titanic.columns.tolist())
 st.metric(f'column: {selected_col}', str(titanic[selected_col].dtype), titanic[selected_col].nunique())
 
 st.write(titanic[selected_col])
-
 #streamlit run UI/dashboard.py ----- to run the program
